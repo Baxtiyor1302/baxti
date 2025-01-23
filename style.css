@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+body{
+    background-color: white;
+    padding: 20px;
+}
+.content_circle{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    position: relative;
+    left: 0;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes box{
+    0%{
+        left: 0;
+        top: 0;
+        background-color: blue;
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    25%{
+        border-radius: 25px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+    }
+    50%{
+        border-radius: 50px;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+    }
+    75%{
+        border-radius: 75px;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+    }
+    100%{
+        border-radius: 100px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+    }
+}
